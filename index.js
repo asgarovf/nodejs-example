@@ -44,6 +44,7 @@ app.get("/api/health", (req, res) => {
     memory: process.memoryUsage(),
     environment: process.env.NODE_ENV || "development",
     timestamp: new Date().toISOString(),
+    newfield: "new field",
   });
 });
 
